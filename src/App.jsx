@@ -15,10 +15,10 @@ export default function App() {
         <Route path='/about' element={<About />}></Route>
         <Route path='/products' element={<StoreFront />}></Route>
         <Route path='/products/:id' element={<ProductDetails />}></Route>
-        <Route path='/products/:id/delivery' element={<ProductDelivery />}></Route>
+        <Route path='/products/:id/delivery' element={<> <ProductDetails/><ProductDelivery/> </>}></Route>
       </Routes>
     </BrowserRouter>
-  )
+  )
 }
 
 
